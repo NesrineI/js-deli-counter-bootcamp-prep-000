@@ -9,7 +9,7 @@ function nowServing(line){
   }
   else{
     var person = line[0];
-    line[0].shift()
+    line.shift()
     return (`Currently serving ${person}.`)
   }
 }
