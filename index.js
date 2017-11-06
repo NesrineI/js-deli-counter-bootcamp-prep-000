@@ -20,7 +20,10 @@ function currentLine(line){
   else{
     lineString = "The line is currently: "
     for(let i=0; i<line.length; i++){
-      lineString +=
+      lineString += `${i+1}. ${line[i]}`
+      if(i<line.length-1){
+        lineString += ', '
+      }
     }
   }
 }
